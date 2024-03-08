@@ -1,10 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { 
-  homePageReducer, 
-} from 'shared/reducers/homeSlice';
+  mythsReducer, 
+} from 'shared/reducers/mythsSlice';
 
 const rootReducer = combineReducers({
-  homePageReducer,
+  mythsReducer,
 });
 
 export const store = configureStore({

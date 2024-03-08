@@ -1,0 +1,53 @@
+ {
+  "mythsOrRealitySection": {
+    "title": {
+      "content": "ХОБЛ: мифы и реальность",
+      "background": {
+        "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FVector%2048.jpg?alt=media&token=729e39da-9ca9-4ad3-8069-4075110457f9"
+      }      
+    },
+     "myths": {
+        "0": {
+         "article": ["В десятилетнем исследовании «Генетическая эпидемиология ХОБЛ» (COPDGene) среди пациентов с ХОБЛ,", "диагностированной до 55 лет, было выявлено преобладание..."],
+          "id": 1,
+          "image": {
+            "alternate": "",
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FGroup%201.jpg?alt=media&token=19dc18d1-a101-4aff-b669-5ed87eccfa77"
+          },
+          "key": "care",
+          "keywords": [
+            "return",
+            "refund"
+          ],
+       
+         "title": {
+            "content": "ХОБЛ болеют преимущественно мужчины?",
+            "background": {
+               "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FmithTitleBackground.jpg?alt=media&token=843ff58e-3a78-4b97-b805-edf665b3bc1c"
+            }           
+          }
+        },
+        "1": {
+         "article": ["Большинство пациентов с ХОБЛ столкнется с обострениями: как минимум одно среднетяжелое или тяжелое обострение ", "случится в течение..."],
+          "id": 2,
+          "image": {
+            "alternate": "",
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FGroup%202.jpg?alt=media&token=76ee1e61-b75b-4406-b80c-ba9ec8f37574"
+          },
+          "key": "cashback",
+          "keywords": [
+            "save",
+            "perchase"
+          ],
+   
+          "title": {
+            "content": "Опасно не наличие заболевания, а обострения?",
+            "background": {
+               "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FmithTitleBackground.jpg?alt=media&token=843ff58e-3a78-4b97-b805-edf665b3bc1c"
+            }
+           
+          }
+        }    
+      }
+  }
+}

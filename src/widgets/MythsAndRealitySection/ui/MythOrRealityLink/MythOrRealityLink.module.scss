@@ -1,0 +1,38 @@
+.myth {
+  display: flex;
+  padding: 40px 30px 40px 40px;
+  max-width: 1290px;
+  border: 1px solid #01457A; 
+  border-radius: 20px; 
+  margin-bottom: 40px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image {
+  margin-right: 30px;
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: #01457A;
+  margin-right: 30px;
+  img {
+    width: 300px;
+    height: 120px;
+    // object-fit: cover;
+  }
+}
+
+.article {
+  font-size: 24px;
+  color: #01457A;
+}
+
+.article p:last-child {
+  color: rgba(1, 69, 122, 0.5); /* Например, цвет с полупрозрачностью */
+}
+
