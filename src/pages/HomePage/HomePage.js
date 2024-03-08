@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 // import { useLang, useHomePage, useDocumentTitle } from 'shared/hooks';
-// import { SectionBase, Cashback } from 'widgets';
+import { MythsAndRealitySection } from 'widgets';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -20,8 +20,8 @@ const HomePage = () => {
 
   return (
     <div>
-      Главная страница
-      {/* {homePageState.homePage?.download && <SectionBase data={homePageState.homePage.download} type='primary' />} */}
+      
+      {<MythsAndRealitySection/>}
      
     </div>
   );

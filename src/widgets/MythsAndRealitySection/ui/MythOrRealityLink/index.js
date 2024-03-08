@@ -1,0 +1,1 @@
+export { MythOrRealityLink } from './MythOrRealityLink';
