@@ -1,0 +1,94 @@
+@import 'shared/constants/styles/breakpoints';
+@import 'shared/constants/styles/varsForSections';
+
+.postPage {
+  padding: 30px 15px;
+  display: grid;
+  gap: 30px;
+
+  @media (min-width: $breakpoint_md) {
+    max-width: $container_max_width;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    max-width: $container_max_width_lg;
+    padding: 40px 0;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    max-width: $container_max_width_xl;
+    padding: 50px 0;
+    gap: 110px;
+  }
+}
+
+.header {  
+  width: 100%; 
+}
+
+.image {
+  margin-top: var(--image-margin-top);
+  height: 70vw;
+  height: var(--image-height);
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0px;
+}
+
+.title {  
+  font-size: 30px;
+  font-weight: 300;
+
+  @media (min-width: $breakpoint_md) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    font-size: 54px;
+  }
+}
+
+.copy {
+  margin-top: 10px;
+
+  @media (min-width: $breakpoint_md) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $breakpoint_xl) {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  &:first-of-type {
+    margin-top: 20px;
+
+    @media (min-width: $breakpoint_xl) {
+      margin-top: 30px;
+    }
+  }
+}
