@@ -1,13 +1,15 @@
 import classes from './MythOrRealityLink.module.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const MythOrRealityLink = ({ mythKey, myth }) => { 
-  const backgroundImageStyle = {
-    backgroundImage: `url(${myth?.title?.background?.source})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    width: '100%'
-  };
+const backgroundImageStyle = {
+  backgroundImage: `url(${myth?.title?.background?.source})`,
+  backgroundSize: 'cover', 
+  backgroundPosition: 'right center',
+  backgroundRepeat: 'no-repeat', 
+  display: 'flex',
+  alignItems: 'center', 
+};
   return (
     <Link className={classes.myth}>
       <div className={classes.image}>
@@ -31,5 +33,5 @@ export const MythOrRealityLink = ({ mythKey, myth }) => {
       </div>
       
     </Link>
-  )
+  );
 };
