@@ -14,10 +14,6 @@ export const MythsAndRealitySection = () => {
     dispatch(mythsState.getMyths());
   }, [dispatch, mythsState.getMiths]);   
 
-  useEffect(() => {
-    console.log(mythsState?.mythsAndRealitySection?.title?.background?.source)
-  }, [mythsState]);   
-
   const backgroundImageStyle = {
     backgroundImage: `url(${mythsState?.mythsAndRealitySection?.title?.background.source})`,
     backgroundSize: 'cover',

@@ -49,5 +49,69 @@
           }
         }    
       }
+  },
+  "therapySection": {
+    "title": {
+      "content": "Терапия ХОБЛ: что в фокусе?",
+      "background": {
+        "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FpharmacyTitleBackground.jpg?alt=media&token=a88807ed-14da-4708-88fc-a2e5f291abfe"
+      }
+    },
+    "subtitle": {
+      "content": "Даже 1 среднетяжелое обострение - сигнал к увеличению объема терапии",
+      "background": {
+         "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2Fpharmacy%20SubtitleBackground.jpg?alt=media&token=d6007485-7f81-493d-b2b2-3c03d2fbf042"
+      }     
+    },
+    "pharmacy": {
+      "pharmacyTitle": "Приоритетные направления фармакотерапевтической стратегии при ХОБЛ:",
+      "medicationBackground": {
+        "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FmedicationBackground.jpg?alt=media&token=d7234a56-10e3-4e98-8fef-aa07f55e0f58"
+      },
+      "medications": [
+        {
+          "medicationBackground": {
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FFrame%2011.jpg?alt=media&token=48860d02-95f4-4b61-903a-be8226a61b1d"
+          },
+          "pharmacyImage": {
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2Fmedication1.jpg?alt=media&token=a1b6351e-3dba-4c2c-bfa2-f5b292afc5e0"
+          },
+          "pharmacyType": "Ингаляционный антихолинергик",
+          "pharmacyTexts": "Ингибирует бронхоконстрикторные эффекты ацетилхолина, вступая с ним в конкурентный антагонизм за взаимодействие с эффекторными мускариновыми рецепторами, дополняет и потенцирует эффект β2-агонистов1"
+        },
+        {
+                 "medicationBackground": {
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FmedicationBackground.jpg?alt=media&token=d7234a56-10e3-4e98-8fef-aa07f55e0f58"
+          },
+          "pharmacyImage": {
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2Fmedication2.jpg?alt=media&token=99aaa25c-027f-422f-9ad9-bb2975997bc1"
+          },
+          "pharmacyType": "Ингаляционный β2-агонист",
+          "pharmacyTexts": "Вызывает бронходилатацию посредством релаксации гладкомышечных клеток бронхов независимо от характера констриктивных стимулов, т. е. выступают в качестве функциональных антагонистов бронхоконстрикции"
+        },
+        {
+          "medicationBackground": {
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2FmedicationBackground.jpg?alt=media&token=d7234a56-10e3-4e98-8fef-aa07f55e0f58"
+          },
+          "pharmacyImage": {
+            "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2Fmedication3.jpg?alt=media&token=cadae053-82d6-4cb2-92de-5e26036b35d9"
+          },
+          "pharmacyType": "Ингаляционный глюкокортикостероид (ИГКС)",
+          "pharmacyTexts": "Снижает частоту обострений, особенно в сочетании с ДДБА, подавляют хроническое воспаление при астме и снижают гиперреактивность дыхательных путей"
+        }
+       
+      ],
+      "recommendations": [
+        {
+          "texts": "Пациентам с ХОБЛ рекомендуется комбинирование бронходилататоров с разными механизмами действия; Назначение 2-х бронходилататоров из группы длительнодействующих β2-агонистов (ДДБА) и длительнодействующих антихолинергиков (ДДАХ), действие которых дополняет и усиливает друг друга1."
+        },
+        {
+          "texts": "Пациентам с ХОБЛ и частыми обострениями (≥2 среднетяжелых обострений в течение 1 года/1 тяжелое обострение, потребовавшее госпитализации) рекомендуется назначение ИГКС в дополнение к ДДБА; Последние исследования показали, что амбулаторное применение ИГКС/ДДБА у пациентов с ХОБЛ снижает госпитальную летальность по сравнению с пациентами, принимавшими только ДДБА (8,1% vs 13,2%)1."
+        }
+      ],
+      "arrow": {
+        "source": "https://firebasestorage.googleapis.com/v0/b/mirvracha-ed28f.appspot.com/o/images%2Farrow.jpg?alt=media&token=ec24e57a-32d7-4452-ad21-1ef68396f1ff"
+      }
+    }
   }
 }

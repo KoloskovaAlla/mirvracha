@@ -1,0 +1,63 @@
+.section {
+  padding: 0 45px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1380px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #01457A;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #01457A;
+  margin-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pharmacytitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #01457A;
+  margin-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.medications {
+  display: flex;   
+}
+
+.medications li {
+  flex: 1;
+}
+
+.recommendations {
+  display: flex;   
+}
+
+.recommendations li {
+  flex: 1;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+}
+
+.leftarrow {
+  margin-right: 15px;
+}
+
+.rightarrow {
+  margin-left: 15px;
+}
