@@ -20,10 +20,11 @@
   font-size: 24px;
   color: #01457A;
   margin-right: 30px;
+  background-size: contain; /* Изменение размера фоновой картинки */
   img {
     width: 300px;
     height: 120px;
-    // object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -35,4 +36,5 @@
 .article p:last-child {
   color: rgba(1, 69, 122, 0.5); /* Например, цвет с полупрозрачностью */
 }
+
 

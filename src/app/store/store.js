@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { 
   mythsReducer, 
-} from 'shared/reducers/mythsSlice';
+  therapyReducer,
+} from 'shared/reducers';
 
 const rootReducer = combineReducers({
   mythsReducer,
+  therapyReducer,
 });
 
 export const store = configureStore({

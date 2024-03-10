@@ -5,16 +5,20 @@ export const MythOrRealityLink = ({ mythKey, myth }) => {
   const backgroundImageStyle = {
     backgroundImage: `url(${myth?.title?.background?.source})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    width: '100%'
   };
   return (
     <Link className={classes.myth}>
       <div className={classes.image}>
         <img src={myth?.image?.source} alt='alternate img' />
       </div>
-        <h3 className={`${classes.title}`} style={backgroundImageStyle}>
-          {myth?.title?.content}
-        </h3>
+      <div className={classes.backgroundImage}>
+          <h3 className={`${classes.title}`} style={backgroundImageStyle}>
+            {myth?.title?.content}
+          </h3>
+      </div>
+     
       <div className={classes.article}>
         {myth?.article?.map((text, index) => (
           <p

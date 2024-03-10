@@ -1,7 +1,8 @@
+import classes from './HomePage.module.scss';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 // import { useLang, useHomePage, useDocumentTitle } from 'shared/hooks';
-import { MythsAndRealitySection } from 'widgets';
+import { MythsAndRealitySection, TherapySection } from 'widgets';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -19,11 +20,12 @@ const HomePage = () => {
   // }, [lang, homePageState.getHomePage, dispatch]);
 
   return (
-    <div>
+    <main className={classes.homepage}>
       
-      {<MythsAndRealitySection/>}
+      {<MythsAndRealitySection />}
+      {<TherapySection />}
      
-    </div>
+    </main>
   );
 };
 

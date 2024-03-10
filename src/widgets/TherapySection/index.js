@@ -1,0 +1,1 @@
+export { TherapySection } from './TherapySection';
