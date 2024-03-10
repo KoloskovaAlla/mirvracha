@@ -2,12 +2,21 @@ import classes from './MythOrRealityLink.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 
 export const MythOrRealityLink = ({ mythKey, myth }) => { 
-  const backgroundImageStyle = {
-    backgroundImage: `url(${myth?.title?.background?.source})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    width: '100%'
-  };
+// const backgroundImageStyle = {
+//   backgroundImage: `url(${myth?.title?.background?.source})`,
+//   backgroundSize: 'cover', // Заполнение контейнера без искажения пропорций
+//   backgroundPosition: 'right center', // Размещение фона справа по центру
+//   backgroundRepeat: 'no-repeat', // Запрещаем повторение фоновой картинки
+// };
+
+const backgroundImageStyle = {
+  backgroundImage: `url(${myth?.title?.background?.source})`,
+  backgroundSize: 'cover', // Заполнение контейнера без искажения пропорций
+  backgroundPosition: 'right center', // Размещение фона справа по центру
+  backgroundRepeat: 'no-repeat', // Запрещаем повторение фоновой картинки
+  display: 'flex',
+  alignItems: 'center', // Выравнивание по вертикали
+};
   return (
     <Link className={classes.myth}>
       <div className={classes.image}>
