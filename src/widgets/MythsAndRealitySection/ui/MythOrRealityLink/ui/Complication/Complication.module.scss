@@ -1,0 +1,38 @@
+.complication {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(253, 217, 102, 0.25);
+}
+
+.image {  
+  height: 130px;
+  width: 80px; 
+  overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+}
+
+.percentage {
+  margin-top: 15px;
+  font-size: 96px;
+  font-weight: bold;
+  color: #01457A;
+}
+
+.complicationFact {
+  margin-top: 15px;
+  font-size: 26px;  
+  color: #01457A;
+}
+
+.research {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #01457A;
+}

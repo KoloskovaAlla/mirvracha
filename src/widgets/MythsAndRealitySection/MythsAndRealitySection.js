@@ -2,11 +2,12 @@ import classes from './MythsAndRealitySection.module.scss';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useMyths } from 'shared/hooks';
-
 import { MythOrRealityLink } from './ui';
 
 export const MythsAndRealitySection = () => {
   const dispatch = useDispatch();
+
+  const [isPreview, setIsPreview] = useState(true);
 
   const mythsState = useMyths();
 
@@ -28,7 +29,7 @@ export const MythsAndRealitySection = () => {
         </h1>
         <ul className={classes.list}>
             {mythsState?.mythsAndRealitySection?.myths && (Object.keys(mythsState?.mythsAndRealitySection?.myths).map((mythKey) =>
-              <li key={mythKey}>
+              <li key={mythKey}>                
                 <MythOrRealityLink
                   mythKey={mythKey}
                   myth={mythsState?.mythsAndRealitySection?.myths[mythKey]}
