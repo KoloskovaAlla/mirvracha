@@ -1,21 +1,14 @@
 import classes from './MythOrRealityLink.module.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const MythOrRealityLink = ({ mythKey, myth }) => { 
-// const backgroundImageStyle = {
-//   backgroundImage: `url(${myth?.title?.background?.source})`,
-//   backgroundSize: 'cover', // Заполнение контейнера без искажения пропорций
-//   backgroundPosition: 'right center', // Размещение фона справа по центру
-//   backgroundRepeat: 'no-repeat', // Запрещаем повторение фоновой картинки
-// };
-
 const backgroundImageStyle = {
   backgroundImage: `url(${myth?.title?.background?.source})`,
-  backgroundSize: 'cover', // Заполнение контейнера без искажения пропорций
-  backgroundPosition: 'right center', // Размещение фона справа по центру
-  backgroundRepeat: 'no-repeat', // Запрещаем повторение фоновой картинки
+  backgroundSize: 'cover', 
+  backgroundPosition: 'right center',
+  backgroundRepeat: 'no-repeat', 
   display: 'flex',
-  alignItems: 'center', // Выравнивание по вертикали
+  alignItems: 'center', 
 };
   return (
     <Link className={classes.myth}>
@@ -40,5 +33,5 @@ const backgroundImageStyle = {
       </div>
       
     </Link>
-  )
+  );
 };
