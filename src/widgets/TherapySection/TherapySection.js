@@ -1,12 +1,11 @@
 import classes from './TherapySection.module.scss';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useEffect, useState } from 'react';
 import { useTherapy } from 'shared/hooks';
 import { Medication, Recommendation } from './ui'
 
 export const TherapySection = () => {
   const dispatch = useDispatch();
-
   const therapyState = useTherapy();  
 
   const backgroundImageTitleStyle = {
@@ -25,14 +24,9 @@ export const TherapySection = () => {
     dispatch(therapyState.getTherapy());
   }, [dispatch, therapyState.getTherapy]);   
 
-  useEffect(() => {
-    console.log(therapyState?.therapySection?.pharmacy.medications);
-  }, [therapyState]);   
-  
   return (
     <section className={classes.section}>
-      <div className={classes.wrapper}> 
-        {/* <h2 className={`${classes.title}`} style={backgroundImageStyle}> */}
+      <div className={classes.wrapper}>         
         <h2 className={`${classes.title}`} style={backgroundImageTitleStyle}>
           {therapyState?.therapySection?.title.content}
         </h2>
@@ -51,10 +45,10 @@ export const TherapySection = () => {
         </ul>
         <div className={classes.arrows}>
           <div className={classes.leftarrow}>
-            <img src={therapyState?.therapySection?.pharmacy?.arrow.source} alt='alternate img' />
+            <img src={therapyState?.therapySection?.pharmacy?.arrow.source} alt='arrow for therapy method' />
           </div>
           <div className={classes.rightarrow}>
-            <img src={therapyState?.therapySection?.pharmacy?.arrow.source} alt='alternate img' />
+            <img src={therapyState?.therapySection?.pharmacy?.arrow.source} alt='arrow for therapy method' />
           </div>
         </div>
         <ul className={classes.recommendations}>
