@@ -5,15 +5,16 @@ export const MythOrRealityLink = ({ mythKey, myth }) => {
   const backgroundImageStyle = {
     backgroundImage: `url(${myth?.title?.background?.source})`,
     backgroundSize: 'cover',
+   
     backgroundPosition: 'center',
-    width: '100%'
+    width: '100%',    
   };
   return (
     <Link className={classes.myth}>
       <div className={classes.image}>
         <img src={myth?.image?.source} alt='alternate img' />
       </div>
-      <div className={classes.backgroundImage}>
+      <div className={classes.titlecontainer}>
           <h3 className={`${classes.title}`} style={backgroundImageStyle}>
             {myth?.title?.content}
           </h3>

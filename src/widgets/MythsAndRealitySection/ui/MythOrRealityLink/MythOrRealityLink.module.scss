@@ -16,10 +16,14 @@
   }
 }
 
+.titlecontainer {
+  margin-right: 30px;
+  height: 100%;
+}
+
 .title {
   font-size: 24px;
   color: #01457A;
-  margin-right: 30px;
   background-size: contain; /* Изменение размера фоновой картинки */
   img {
     width: 300px;
