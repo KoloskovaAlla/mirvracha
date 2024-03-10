@@ -1,4 +1,6 @@
+
 .myth {
+  position: relative;
   display: flex;
   padding: 40px 30px 40px 40px;
   max-width: 1290px;
@@ -7,6 +9,27 @@
   margin-bottom: 40px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.fullVersionMyth {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px 40px 40px;
+  max-width: 1290px;
+  border: 1px solid #01457A; 
+  border-radius: 20px; 
+  margin-bottom: 40px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iconClick {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20%, -50%);
+}
+
 .image {
   margin-right: 30px;
   img {
@@ -29,11 +52,39 @@
   }
 }
 
+.fullVersionTitle {
+  margin-top: 40px;
+  font-size: 30px;
+  color: #01457A;
+  font-weight: bold;
+  text-align: center;
+}
+
+.previewArticle {
+  font-size: 24px;
+  color: #01457A;
+}
+
+.previewArticle p:last-child {
+  color: rgba(1, 69, 122, 0.5);
+}
+
 .article {
   font-size: 24px;
   color: #01457A;
 }
 
-.article p:last-child {
-  color: rgba(1, 69, 122, 0.5);
+.complications {
+  margin-top: 40px;
+  display: flex;   
+  justify-content: space-between;
+}
+
+.complications li {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 33%; 
+  text-align: center; 
+  box-sizing: border-box; 
+  padding: 0 10px;
 }
