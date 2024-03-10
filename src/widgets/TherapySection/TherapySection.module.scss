@@ -35,10 +35,16 @@
 
 .medications {
   display: flex;   
+  justify-content: space-between;
 }
 
 .medications li {
-  flex: 1;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 33%; /* или любое другое значение, которое вам подходит */
+  text-align: center; /* для центрирования содержимого внутри элемента */
+  box-sizing: border-box; /* чтобы учитывать padding внутри элемента */
+  padding: 0 10px; /* добавляем отступы, чтобы создать промежутки */
 }
 
 .recommendations {
