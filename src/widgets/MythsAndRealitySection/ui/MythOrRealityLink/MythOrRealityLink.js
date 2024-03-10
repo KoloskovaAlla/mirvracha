@@ -1,6 +1,5 @@
 import classes from './MythOrRealityLink.module.scss';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Complication } from './ui';
 import { ReactComponent as IconClickPreview } from './blue.svg';
 import { ReactComponent as IconClickFull } from './green.svg';
@@ -20,10 +19,6 @@ export const MythOrRealityLink = ({ mythKey, myth }) => {
     setIsPreview(!isPreview);
   };
 
-  useEffect(() => {
-    console.log(myth?.fullVersion?.title?.content)
-  }, []);
-
   if (isPreview) return (  
         <div className={classes.myth}>
           <IconClickPreview 
@@ -31,7 +26,7 @@ export const MythOrRealityLink = ({ mythKey, myth }) => {
             className={classes.iconClick} 
           /> 
           <div className={classes.image}>
-            <img src={myth?.image?.source} alt='alternate img' />
+            <img src={myth?.image?.source} alt='myth' />
           </div>
           <div className={classes.backgroundImage}>
               <h3 className={classes.title} style={backgroundImageStyle}>

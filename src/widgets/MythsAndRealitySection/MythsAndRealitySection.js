@@ -6,9 +6,6 @@ import { MythOrRealityLink } from './ui';
 
 export const MythsAndRealitySection = () => {
   const dispatch = useDispatch();
-
-  const [isPreview, setIsPreview] = useState(true);
-
   const mythsState = useMyths();
 
   useEffect(() => {
