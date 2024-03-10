@@ -41,10 +41,10 @@
 .medications li {
   flex-grow: 1;
   flex-basis: 0;
-  max-width: 33%; /* или любое другое значение, которое вам подходит */
-  text-align: center; /* для центрирования содержимого внутри элемента */
-  box-sizing: border-box; /* чтобы учитывать padding внутри элемента */
-  padding: 0 10px; /* добавляем отступы, чтобы создать промежутки */
+  max-width: 33%; 
+  text-align: center; 
+  box-sizing: border-box; 
+  padding: 0 10px;
 }
 
 .recommendations {
